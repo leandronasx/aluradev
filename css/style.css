@@ -1,0 +1,70 @@
+/* CSS RESET */
+*{
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+/* CSS GERAL */
+.main-alura{
+    background-color: #051D3B;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cabecalho-alura{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.cabecalho-alura .logo-alura img{
+    max-width: 200px;
+}
+
+
+.cabecalho-alura #pesquisar-code{
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.cabecalho-alura #pesquisar-code::placeholder{
+    color: #fff;
+}
+
+
+.cabecalho-alura .avatar-alura{
+    display: flex;
+    align-items: center;
+}
+.cabecalho-alura #logo-user{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.cabecalho-alura #name-user{
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+
+
+.editor-alura{
+    display: none;
+}
+.sidebar-alura{
+    display: none;
+}
