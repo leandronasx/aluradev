@@ -6,6 +6,7 @@
     border: 0px;
     outline: 0px;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 /* CSS GERAL */
@@ -80,11 +81,37 @@ img{
 
 .editor-menu{
     width: 10%;
-    max-width: 200px;
+    padding-top: 30px;
+}
+.menu-alura{
+    width: 200px;
+    margin-left: -50px;
+}
+.menu-alura h2{
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 .menu-alura ul{
     list-style: none;
 }
+.menu-alura li{
+    margin-bottom: 20px;
+}
+.menu-alura a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-alura .fas{
+    background-color: #5081FB;
+    padding: 16px 14px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+
+/* ---------------------------------------- */
 
 
 .editor-editor{
@@ -144,6 +171,73 @@ img{
     margin-top: 20px;
 }
 
+/* ----------------------------------------------------- */
+
 .editor-sidebar{
    width: 20%;
+   padding-top: 30px;
+}
+
+.sidebar-alura h2{
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.sidebar-alura input{
+    width: 270px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.sidebar-alura input::placeholder{
+    color: #fff;
+}
+
+.sidebar-alura #name-project{
+    margin-bottom: 20px;
+}
+.sidebar-alura #descri-project{
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.sidebar-alura #lang{
+    width: 270px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.sidebar-alura #lang option{
+    background-color: #051D3B;
+    color: #fff;
+}
+.sidebar-alura #cor-project{
+    padding: 0px;
+    background-color: initial;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border: 2px solid #fff;
+    padding: 3px;
+    border-radius: 8px;
+}
+/* .sidebar-alura #cor-project::-webkit-color-swatch-wrapper {
+    padding: 0;
+} */
+.sidebar-alura #cor-project::-webkit-color-swatch {
+    border: none;
+    border-radius: 6px;
+    width: 30px;
+}
+.sidebar-alura input[type="button"]{
+    background-color: #5081FB;
+    color: #051D3B;
 }

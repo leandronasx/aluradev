@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura dev - Mostre ao mundo seu código</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 </head>
 <body>
     <main class="main-alura">
@@ -31,8 +34,8 @@
                 <nav class="menu-alura">
                     <h2>MENU</h2>
                     <ul>
-                        <li><i></i><a href="#">Editor de código</a></li>
-                        <li><i></i><a href="#">Comunidade</a></li>
+                        <li><i class="fas fa-code"></i> <a href="#">Editor de código</a></li>
+                        <li><i class="fas fa-users"></i> <a href="#">Comunidade</a></li>
                     </ul>
                 </nav>
             </section>
@@ -55,6 +58,24 @@
            <section class="editor-sidebar">
                 <aside class="sidebar-alura">
                     <h2>Seu projeto</h2>
+
+                    <input type="text" name="name-project" id="name-project" placeholder="Nome do seu projeto">
+
+
+                    <input type="text" name="descri-project" id="descri-project" placeholder="Descrição do seu projeto">
+
+                    <h2>Personalização</h2>
+
+                    <select name="lang" id="lang">
+                        <option value="js">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="py">Python</option>
+                    </select>
+
+                    <input type="color" name="cor-project" id="cor-project">
+
+                    <input type="button" value="Salvar projeto">
                 </aside>
            </section>
         </article>
