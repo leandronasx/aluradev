@@ -12,6 +12,7 @@
 /* CSS GERAL */
 .main-alura{
     background-color: #051D3B;
+    width: 100%;
 }
 img{
     width: 100%;
@@ -34,15 +35,12 @@ img{
 .logo-alura{
     width: 10%;
 }
-.cabecalho-alura .logo-alura img{
+.logo-alura img{
     width: 100%;
-    max-width: 200px;
 }
 
-
 .cabecalho-alura #pesquisar-code{
-    width: 70%;
-    max-width: 700px;
+    width: 700px;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.16);
     color: #fff;
@@ -51,6 +49,13 @@ img{
 }
 .cabecalho-alura #pesquisar-code::placeholder{
     color: #fff;
+}
+
+.menu-mobile{
+    display: none;
+}
+.pesquisar-mobile{
+    display: none;
 }
 
 
@@ -115,8 +120,7 @@ img{
 
 
 .editor-editor{
-    width: 70%;
-    max-width: 700px;
+    width: 700px;
 }
 .editor-borda{
     margin: auto;
@@ -240,4 +244,90 @@ img{
 .sidebar-alura input[type="button"]{
     background-color: #5081FB;
     color: #051D3B;
+}
+
+
+/* RESPOSIVIDADE */
+
+@media screen and (max-width: 1315px){
+    .cabecalho-alura .avatar-alura{
+        display: none;
+    }
+    .logo-alura{
+        width: 15%;
+    }
+    .cabecalho-alura #pesquisar-code{
+        width: 70%;
+    }
+    .menu-mobile{
+        width: 10%;
+        display: block;
+    }
+    .menu-mobile .menu-bars{
+        font-size: 25px;
+        color: #FFF;
+        margin-left: 10%;
+    }
+
+    /* -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+    .editor-alura{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+    }
+    .editor-menu{
+        display: none;
+    }
+
+    /* -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+    .editor-editor{
+        width: 100%;
+    }
+    .editor-borda{
+        width: 100%;
+    }
+    .back-bolinhas{
+        width: 100%;
+    }
+    #editor-code{
+        width: 100%;
+    }
+
+    /*  -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+    .editor-sidebar{
+        width: 100%;
+    }
+     
+    .sidebar-alura input{
+        width: 100%;
+    }
+     
+    .sidebar-alura #lang{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .logo-alura{
+        width: 50%;
+    }
+    .cabecalho-alura #pesquisar-code{
+        display: none;
+    }
+    .pesquisar-mobile{
+        display: block;
+    }
+    .pesquisar-mobile i{
+        font-size: 25px;
+        color: #FFF;
+    }
+    .editor-alura{
+        padding: 20px 10px;
+    }
 }
