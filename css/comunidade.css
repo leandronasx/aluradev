@@ -60,6 +60,7 @@ img{
     display: none;
 }
 
+/* -------------------------------------- */
 
 .cabecalho-alura .avatar-alura{
     width: 20%;
@@ -81,14 +82,16 @@ img{
 
 .editor-alura{
     display: flex;
-    height: 85vh;
+    min-height: 85vh;
     width: 100%;
     justify-content: space-evenly;
 }
 
 .editor-menu{
     width: 10%;
+    width: 180px;
     padding-top: 30px;
+    margin-left: 50px;
 }
 .menu-alura{
     width: 200px;
@@ -124,23 +127,30 @@ img{
     background-color: rgba(80, 129, 251, 0.16);
 }
 
-
 /* ---------------------------------------- */
 
+.editor-code-dinamico{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
 
 .editor-editor{
-    width: 700px;
+    width: 500px;
+    height: 450px;
+    background-color: #00000035;
+    margin-bottom: 24px;
 }
 .editor-borda{
     margin: auto;
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    height: 280px;
     background-color: #6BD1FF;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
 }
 .back-bolinhas{
-    width: 620px;
+    width: 100%;
     height: 40px;
     background-color: #141414;
     position: relative;
@@ -168,104 +178,15 @@ img{
 }
 
 #editor-code{
-    width: 620px;
-    height: 280px;
+    width: 100%;
+    height: 200px;
     background-color: #141414;
     border-radius: 0px 0px 8px 8px;
     padding-left: 10px;
     color: #fff;
 }
-.editor-editor input[type="button"]{
-    width: 100%;
-    background: rgba(80, 129, 251, 0.08);
-    border-radius: 8px;
-    height: 50px;
-    color: #fff;
-    margin-top: 20px;
-}
-.editor-editor input[type="button"]:hover{
-    background: rgba(80, 129, 251, 0.19);
-}
 
-/* ----------------------------------------------------- */
 
-.editor-sidebar{
-   width: 20%;
-   padding-top: 30px;
-}
-
-.sidebar-alura h2{
-    font-weight: normal;
-    color: #fff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.sidebar-alura input{
-    width: 270px;
-    height: 56px;
-    background-color: rgba(255, 255, 255, 0.16);
-    color: #fff;
-    border-radius: 8px;
-    padding-left: 10px;
-}
-.sidebar-alura input::placeholder{
-    color: #fff;
-}
-.sidebar-alura input:hover {
-    background-color: rgba(255, 255, 255, 0.32);
-}
-
-.sidebar-alura #name-project{
-    margin-bottom: 20px;
-}
-.sidebar-alura #descri-project{
-    height: 80px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-}
-
-.sidebar-alura #lang{
-    width: 270px;
-    height: 56px;
-    background-color: rgba(255, 255, 255, 0.16);
-    color: #fff;
-    border-radius: 8px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-}
-.sidebar-alura #lang:hover{
-    background-color: rgba(255, 255, 255, 0.32);
-}
-.sidebar-alura #lang option{
-    background-color: #051D3B;
-    color: #fff;
-}
-.sidebar-alura #cor-project{
-    padding: 0px;
-    background-color: initial;
-    margin-bottom: 20px;
-    outline: none;
-    border: none;
-    border: 2px solid #fff;
-    padding: 3px;
-    border-radius: 8px;
-}
-/* .sidebar-alura #cor-project::-webkit-color-swatch-wrapper {
-    padding: 0;
-} */
-.sidebar-alura #cor-project::-webkit-color-swatch {
-    border: none;
-    border-radius: 6px;
-    width: 30px;
-}
-.sidebar-alura input[type="button"]{
-    background-color: #5081FB;
-    color: #051D3B;
-}
-.sidebar-alura input[type="button"]:hover{
-    background-color: rgba(80, 129, 251, .8);
-}
 
 
 /* RESPOSIVIDADE */

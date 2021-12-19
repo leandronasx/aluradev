@@ -7,7 +7,7 @@
     <title>Alura dev - Comunidade - Mostre ao mundo seu código</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/comunidade.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 </head>
@@ -40,24 +40,63 @@
                 <nav class="menu-alura">
                     <h2>MENU</h2>
                     <ul>
-                        <li><i class="fas fa-code"></i> <a href="#">Editor de código</a></li>
-                        <li><i class="fas fa-users"></i> <a href="#">Comunidade</a></li>
+                        <li><i class="fas fa-code"></i> <a href="./index.html">Editor de código</a></li>
+                        <li><i class="fas fa-users"></i> <a href="./comunidade.html">Comunidade</a></li>
                     </ul>
                 </nav>
             </section>
 
 
-            <section class="editor-editor">
-                <div class="editor-borda">
-                    <div class="back-bolinhas">
-                        <span class="bolinha bolinha-red"></span>
-                        <span class="bolinha bolinha-yellow"></span>
-                        <span class="bolinha bolinha-green"></span>
+            <section class="editor-code-dinamico">
+
+                <section class="editor-editor">
+                    <div class="editor-borda">
+                        <div class="back-bolinhas">
+                            <span class="bolinha bolinha-red"></span>
+                            <span class="bolinha bolinha-yellow"></span>
+                            <span class="bolinha bolinha-green"></span>
+                        </div>
+                        <textarea name="editor-code" id="editor-code"></textarea>
                     </div>
-                    <textarea name="editor-code" id="editor-code"></textarea>
-                </div>
-    
-                <input type="button" value="Visualizar com o highlight">
+                    <div class="editor-dados">
+                        <h2>Titulo do projeto</h2>
+
+                        <span>Descriçao do projeto</span>
+
+                        <p><span><i class="fas fa-heart"></i></span> 0</p>
+
+                        <section class="avatar-dados">
+                            <div id="logo-dados">
+                                <img style="width: 32px; height: 32px;" src="./img/header/photo.png" alt="avatar do usuário">
+                            </div>
+            
+                            <span id="name-user">@Harry</span>
+                        </section>
+                    </div>
+                </section>
+                
+                <section class="editor-editor">
+                    <div class="editor-borda">
+                        <div class="back-bolinhas">
+                            <span class="bolinha bolinha-red"></span>
+                            <span class="bolinha bolinha-yellow"></span>
+                            <span class="bolinha bolinha-green"></span>
+                        </div>
+                        <textarea name="editor-code" id="editor-code"></textarea>
+                    </div>
+                </section>
+
+                <section class="editor-editor">
+                    <div class="editor-borda">
+                        <div class="back-bolinhas">
+                            <span class="bolinha bolinha-red"></span>
+                            <span class="bolinha bolinha-yellow"></span>
+                            <span class="bolinha bolinha-green"></span>
+                        </div>
+                        <textarea name="editor-code" id="editor-code"></textarea>
+                    </div>
+                </section>
+
             </section>
         </article>
     </main>
