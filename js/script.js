@@ -4,3 +4,42 @@ corDaBarra.value = "#6BD1FF";
 corDaBarra.addEventListener("input", function(){
     document.querySelector(".editor-borda").style.backgroundColor = this.value;
 });
+
+let estruturaCode = {
+    "nomeProjeto": "",
+    "descricaoProjeto": "",
+    "personalizacaoCode": "",
+    "corBorda": "",
+    "qntCurtidas": 0,
+    "comentarios": [],
+    "codigo": ""
+}
+
+
+
+
+function salvarProjeto(){
+    estruturaCode.nomeProjeto = document.getElementById("name-project").value;
+
+    estruturaCode.descricaoProjeto = document.getElementById("descri-project").value;
+
+    estruturaCode.personalizacaoCode = document.getElementById("lang").value;
+
+    estruturaCode.corBorda = document.getElementById("cor-project").value;
+
+    estruturaCode.codigo = document.getElementById("editor-code").value;
+
+    
+    let novoProjeto = window.localStorage.getItem("listaProjetos");
+    if(novoProjeto != null){
+        novoProjeto =  JSON.parse(novoProjeto);
+        novoProjeto.push(estruturaCode);
+        window.localStorage.removeItem("listaProjetos");
+        window.localStorage.setItem("listaProjetos", JSON.stringify(novoProjeto));
+    }else{
+        let novoProjeto = [];
+        novoProjeto.push(estruturaCode);
+        novoProjeto = JSON.stringify(novoProjeto);
+        window.localStorage.setItem("listaProjetos", novoProjeto);
+    }
+}
