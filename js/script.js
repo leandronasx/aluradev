@@ -27,7 +27,7 @@ function salvarProjeto(){
 
     estruturaCode.corBorda = document.getElementById("cor-project").value;
 
-    estruturaCode.codigo = document.getElementById("editor-code").value;
+    estruturaCode.codigo = document.getElementById("editor-code").textContent;
 
     
     let novoProjeto = window.localStorage.getItem("listaProjetos");
@@ -42,4 +42,19 @@ function salvarProjeto(){
         novoProjeto = JSON.stringify(novoProjeto);
         window.localStorage.setItem("listaProjetos", novoProjeto);
     }
+}
+
+
+// ==============================================================
+
+
+function sintaxeLang(){
+    let sintaxe = document.getElementById("lang").value;
+
+    let code = document.getElementById("editor-code");
+    let codigo = code.innerText;
+    code.className = "";
+    code.className = "language-"+sintaxe+" hljs";
+    code.textContent = codigo;
+    hljs.highlightElement(code);
 }

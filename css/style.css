@@ -176,6 +176,7 @@ img{
     color: #fff;
     overflow-y: hidden;
     resize: none;
+    white-space: pre-wrap;
 }
 .editor-editor input[type="button"]{
     width: 100%;

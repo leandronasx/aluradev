@@ -16,13 +16,16 @@ function popularProjetos(projetoInfo){
         bBolinhas.className = "back-bolinhas";
         bBolinhas.innerHTML = "<span class='bolinha bolinha-red'></span> <span class='bolinha bolinha-yellow'></span> <span class='bolinha bolinha-green'></span>";
 
-        let textArea = document.createElement("textarea");
+        let pre = document.createElement("pre");
+        let textArea = document.createElement("code");
         textArea.name = "editor-code";
         textArea.id = "editor-code";
-        textArea.value = p.codigo;
+        textArea.className = "language-"+p.personalizacaoCode+" hljs";
+        textArea.textContent = p.codigo;
 
         edBorda.appendChild(bBolinhas);
-        edBorda.appendChild(textArea);
+        pre.appendChild(textArea);
+        edBorda.appendChild(pre);
 
         editor.appendChild(edBorda);
 
@@ -77,6 +80,7 @@ if(projetoInfo != null){
     projetoInfo =  JSON.parse(projetoInfo);
 
     popularProjetos(projetoInfo);
+    hljs.highlightAll();
 }else{
     editorDinamico.innerHTML = "<h1>Nenhum projeto</h1>"
 }
