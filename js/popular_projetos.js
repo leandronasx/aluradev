@@ -5,6 +5,7 @@ let projetoInfo = window.localStorage.getItem("listaProjetos");
 function popularProjetos(projetoInfo){
     editorDinamico.innerHTML = "";
     projetoInfo.forEach( p => {
+        console.log(p);
         let editor = document.createElement("section");
         editor.className = "editor-editor";
 
@@ -18,10 +19,11 @@ function popularProjetos(projetoInfo){
 
         let pre = document.createElement("pre");
         let textArea = document.createElement("code");
-        textArea.name = "editor-code";
-        textArea.id = "editor-code";
-        textArea.className = "language-"+p.personalizacaoCode+" hljs";
+        textArea.className = "editor-code language-"+p.personalizacaoCode+" hljs";
+        textArea.setAttribute("contenteditable", "true");
         textArea.textContent = p.codigo;
+
+        hljs.highlightElement(textArea);
 
         edBorda.appendChild(bBolinhas);
         pre.appendChild(textArea);
@@ -71,16 +73,15 @@ function popularProjetos(projetoInfo){
         editor.appendChild(edDados);
 
         // -------------------------------------
-
         editorDinamico.appendChild(editor);
     });
 }
 
 if(projetoInfo != null){
     projetoInfo =  JSON.parse(projetoInfo);
-
     popularProjetos(projetoInfo);
+
     hljs.highlightAll();
 }else{
-    editorDinamico.innerHTML = "<h1>Nenhum projeto</h1>"
+    editorDinamico.innerHTML = "<h1 style='color: #fff; font-size: 2rem; margin-top: 25px;'>Nenhum projeto</h1>"
 }

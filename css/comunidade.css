@@ -177,7 +177,7 @@ img{
     left: 50px;
 }
 
-#editor-code{
+.editor-code{
     width: 100%;
     height: 200px;
     background-color: #141414;
@@ -186,6 +186,7 @@ img{
     color: #fff;
     overflow-y: hidden;
     resize: none;
+    white-space: pre-wrap;
 }
 
 .editor-dados{
