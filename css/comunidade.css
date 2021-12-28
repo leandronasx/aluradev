@@ -177,7 +177,7 @@ img{
     left: 50px;
 }
 
-.editor-code{
+#editor-code{
     width: 100%;
     height: 200px;
     background-color: #141414;

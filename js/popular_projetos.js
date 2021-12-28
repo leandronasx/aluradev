@@ -19,11 +19,10 @@ function popularProjetos(projetoInfo){
 
         let pre = document.createElement("pre");
         let textArea = document.createElement("code");
-        textArea.className = "editor-code language-"+p.personalizacaoCode+" hljs";
+        textArea.className = "language-"+p.personalizacaoCode+" hljs";
+        textArea.id = "editor-code";
         textArea.setAttribute("contenteditable", "true");
         textArea.textContent = p.codigo;
-
-        hljs.highlightElement(textArea);
 
         edBorda.appendChild(bBolinhas);
         pre.appendChild(textArea);
@@ -74,14 +73,13 @@ function popularProjetos(projetoInfo){
 
         // -------------------------------------
         editorDinamico.appendChild(editor);
+        hljs.highlightElement(textArea);
     });
 }
 
 if(projetoInfo != null){
     projetoInfo =  JSON.parse(projetoInfo);
     popularProjetos(projetoInfo);
-
-    hljs.highlightAll();
 }else{
     editorDinamico.innerHTML = "<h1 style='color: #fff; font-size: 2rem; margin-top: 25px;'>Nenhum projeto</h1>"
 }

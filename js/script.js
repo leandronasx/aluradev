@@ -40,6 +40,14 @@ function salvarProjeto(){
         novoProjeto = JSON.stringify(novoProjeto);
         window.localStorage.setItem("listaProjetos", novoProjeto);
     }
+
+    document.querySelector(".modal-mensagem").style.display = "block";
+    document.querySelector(".mensagem").style.right = "0px";
+
+    setInterval(function(){
+        document.querySelector(".modal-mensagem").style.display = "none";
+        document.querySelector(".mensagem").style.right = "-50%";
+    }, 4000);
 }
 
 
