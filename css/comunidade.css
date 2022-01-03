@@ -134,6 +134,68 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
+#content-comentarior{
+    width: 95%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#realizar-comentario{
+    width: 100%;
+}
+#realizar-comentario h2{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#realizar-comentario input{
+    width: 100%;
+    height: 40px;
+    background: rgba(80, 129, 251, 0.08);
+    color: #fff;
+    margin-top: 5px;
+}
+#realizar-comentario input:hover{
+    background: rgba(80, 129, 251, 0.19);
+}
+#comentar-post{
+    padding-top: 10px;
+    overflow-y: hidden;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    resize: none;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+#comentar-post:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+}
+
+#carregar-comentarios{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#carregar-comentarios div{
+    width: 100%;
+    min-height: 70px;
+    margin: auto;
+    background-color: rgba(14, 55, 105, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* =========================================================== */
 
 .editor-editor{
     width: 500px;
@@ -261,7 +323,10 @@ img{
         width: 100%;
     }
     /* -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
-
+    #content-comentarior{
+        width: 95%;
+        margin: 0 5%;
+    }
     .editor-editor{
         width: 100%;
     }
@@ -294,6 +359,10 @@ img{
     }
 }
 @media screen and (max-width: 1000px){
+    #content-comentarior{
+        width: 100%;
+        margin: 0;
+    }
     #editor-code-dinamico{
         width: 100%;
         display: flex;
@@ -320,4 +389,10 @@ img{
     .editor-alura{
         padding: 20px 10px;
     }
+}
+
+
+/*  */
+.fa-heart:active , .fa-comment:active{
+    color: palevioletred;
 }

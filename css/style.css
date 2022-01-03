@@ -13,6 +13,7 @@
 .main-alura{
     background-color: #051D3B;
     width: 100%;
+    min-height: 85vh;
 }
 img{
     width: 100%;
@@ -81,7 +82,6 @@ img{
 
 .editor-alura{
     display: flex;
-    height: 85vh;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -127,20 +127,60 @@ img{
 
 /* ---------------------------------------- */
 
+.export{
+    width: 720px;
+    height: 501px;
+    border: #fff 3px solid;
+    border-radius: 8px;
+    background-color: #051D3B;
+    position: relative;
+    margin-bottom: 100px;
+}
+.export button{
+    width: 150px;
+    position: absolute;
+    background-color: #051D3B;
+    color: #C198FB;
+    border: solid 2px #C198FB;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+.export button:hover{
+    background-color: #041C1B;
+    color: #fff;
+    border-color: #fff;
+}
+.export button:hover i{
+    border-color: #fff;
+}
+.export i{
+    height: 31px;
+    vertical-align: middle;
+    border-left: solid 2px #C198FB;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+.export i.fas{
+    padding-top: 7px;
+    text-align: center;
+}
 
 .editor-editor{
-    width: 700px;
+    width: 680px;
+    margin: auto;
+    margin-top: 75px;
 }
 .editor-borda{
     margin: auto;
-    width: 700px;
+    width: 680px;
     height: 400px;
     background-color: #6BD1FF;
     padding: 40px;
     border-radius: 8px;
 }
 .back-bolinhas{
-    width: 620px;
+    width: 600px;
     height: 40px;
     background-color: #141414;
     position: relative;
@@ -168,7 +208,7 @@ img{
 }
 
 #editor-code{
-    width: 620px;
+    width: 600px;
     height: 280px;
     background-color: #141414;
     border-radius: 0px 0px 8px 8px;
@@ -179,12 +219,13 @@ img{
     white-space: pre-wrap;
 }
 .editor-editor input[type="button"]{
-    width: 100%;
+    width: 720px;
     background: rgba(80, 129, 251, 0.08);
     border-radius: 8px;
     height: 50px;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: -20px;
 }
 .editor-editor input[type="button"]:hover{
     background: rgba(80, 129, 251, 0.19);
@@ -193,8 +234,7 @@ img{
 /* ----------------------------------------------------- */
 
 .editor-sidebar{
-   width: 20%;
-   padding-top: 30px;
+    width: 20%;
 }
 
 .sidebar-alura h2{
@@ -333,12 +373,15 @@ img{
     }
 
     /* -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+    .export{
+        width: 100%;
+    }
 
     .editor-editor{
         width: 100%;
     }
     .editor-borda{
-        width: 100%;
+        width: 96%;
     }
     .back-bolinhas{
         width: 100%;
@@ -346,7 +389,10 @@ img{
     #editor-code{
         width: 100%;
     }
-
+    .editor-editor input[type="button"]{
+        margin-left: 0px;
+        width: 100%;
+    }
     /*  -=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 

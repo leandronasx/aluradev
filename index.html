@@ -13,7 +13,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 <body>
     <main class="main-alura">
@@ -51,19 +50,21 @@
             </section>
 
 
-            <section class="editor-editor">
-                <div class="editor-borda">
-                    <div class="back-bolinhas">
-                        <span class="bolinha bolinha-red"></span>
-                        <span class="bolinha bolinha-yellow"></span>
-                        <span class="bolinha bolinha-green"></span>
+            <section class="export">
+                <button> Exportar <i class="fas fa-chevron-down"></i> </button>
+                <section class="editor-editor">
+                    <div class="editor-borda">
+                        <div class="back-bolinhas">
+                            <span class="bolinha bolinha-red"></span>
+                            <span class="bolinha bolinha-yellow"></span>
+                            <span class="bolinha bolinha-green"></span>
+                        </div>
+                        <pre><code id="editor-code" class="language-plaintext hljs" contenteditable="true" aria-label="Editor de código"></code></pre>
                     </div>
-                    <pre><code id="editor-code" class="language-plaintext hljs" contenteditable="true" aria-label="Editor de código"></code></pre>
-                </div>
-    
-                <input onclick="sintaxeLang()" type="button" value="Visualizar com o highlight" />
+        
+                    <input onclick="sintaxeLang()" type="button" value="Visualizar com o highlight" />
+                </section>    
             </section>
-
 
            <section class="editor-sidebar">
                 <aside class="sidebar-alura">

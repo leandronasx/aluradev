@@ -24,7 +24,7 @@ function retornaProjeto(nome, desc, perso, cor, codigo){
 
 function salvarProjeto(){
     let projeto = retornaProjeto(document.getElementById("name-project").value, document.getElementById("descri-project").value, document.getElementById("lang").value,
-    document.getElementById("cor-project").value, document.getElementById("editor-code").innerText);
+    document.getElementById("cor-project").value, document.getElementById("editor-code").textContent);
 
     
     let novoProjeto = window.localStorage.getItem("listaProjetos");
