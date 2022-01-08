@@ -136,7 +136,7 @@ img{
 }
 #content-comentarior{
     width: 95%;
-    margin: 0 5%;
+    margin: 0 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,8 +147,8 @@ img{
 }
 #realizar-comentario h2{
     color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
     text-align: center;
 }
 #realizar-comentario input{
@@ -182,6 +182,12 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#carregar-comentarios h2{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 #carregar-comentarios div{
     width: 100%;
@@ -291,6 +297,28 @@ img{
     .cabecalho-alura .avatar-alura{
         display: none;
     }
+    .cabecalho-alura .avatar-mobile{
+        position: fixed;
+        display: flex;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        padding-top: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(8, 21, 37, 0.9);
+    }
+    .cabecalho-alura .avatar-mobile #name-user{
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+    .cabecalho-alura .avatar-mobile #logo-user{
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+    }
     .logo-alura{
         width: 15%;
     }
@@ -316,16 +344,25 @@ img{
         height: auto;
         padding: 40px;
     }
+
     .editor-menu{
         display: none;
     }
+    .editor-mobile{
+        position: fixed;
+        display: block;
+        top: 60px;
+        right: 45px;
+        z-index: 11;
+    }
+
     #editor-code-dinamico{
         width: 100%;
     }
     /* -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
     #content-comentarior{
         width: 95%;
-        margin: 0 5%;
+        margin: 0 4%;
     }
     .editor-editor{
         width: 100%;

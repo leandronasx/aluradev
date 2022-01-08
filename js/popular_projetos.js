@@ -159,6 +159,8 @@ function abrirProjetoEdicao(id){
     let carregar_comentarios = document.createElement("section");
     carregar_comentarios.id = "carregar-comentarios";
 
+    carregar_comentarios.innerHTML = "<h2> Comentários </h2>";
+
     content_comentarior.appendChild(realizar_comentario);
     content_comentarior.appendChild(carregar_comentarios);
 
@@ -260,6 +262,13 @@ function popularProjetos(projetoInfo){
     });
 }
 
+function menuMobile(){
+    let avatar_alura = document.querySelector(".avatar-alura");
+    let editor_menu = document.querySelector(".editor-menu");
+
+    avatar_alura.classList.toggle("avatar-mobile");
+    editor_menu.classList.toggle("editor-mobile")
+}
 
 if(projetoInfo != null){
     projetoInfo =  JSON.parse(projetoInfo);

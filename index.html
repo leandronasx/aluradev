@@ -34,7 +34,7 @@
             </section>
 
             <div class="menu-mobile">
-                <i class="fas fa-bars menu-bars"></i>
+                <i class="fas fa-bars menu-bars" onclick="menuMobile()"></i>
             </div>
         </header>
 
@@ -51,7 +51,7 @@
 
 
             <section class="export">
-                <button> Exportar <i class="fas fa-chevron-down"></i> </button>
+                <button onclick="modalExport()"> Exportar <i class="fas fa-chevron-down"></i> </button>
                 <section class="editor-editor">
                     <div class="editor-borda">
                         <div class="back-bolinhas">
@@ -63,7 +63,16 @@
                     </div>
         
                     <input onclick="sintaxeLang()" type="button" value="Visualizar com o highlight" />
-                </section>    
+                </section>
+                
+                <section class="modal-export">
+                    <span onclick="savePng()">PNG <i class="fas fa-file-image"></i></span>
+                    <span onclick="saveJpg()">JPG <i class="fas fa-file-image"></i></span>
+                    <span onclick="saveSvg()">SVG <i class="fas fa-file-image"></i></span>
+                    <span onclick="saveHtml()">HTML <i class="fab fa-html5"></i></span>
+                    <span onclick="saveCss()">CSS <i class="fab fa-css3-alt"></i></span>
+                    <span onclick="saveJs()">JS <i class="fab fa-js-square"></i></span>
+                </section>
             </section>
 
            <section class="editor-sidebar">
@@ -98,6 +107,9 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js" integrity="sha512-UNbeFrHORGTzMn3HTt00fvdojBYHLPxJbLChmtoyDwB6P9hX5mah3kMKm0HHNx/EvSPJt14b+SlD8xhuZ4w9Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js" integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
+

@@ -128,7 +128,7 @@ img{
 /* ---------------------------------------- */
 
 .export{
-    width: 720px;
+    width: 700px;
     height: 501px;
     border: #fff 3px solid;
     border-radius: 8px;
@@ -154,7 +154,7 @@ img{
 .export button:hover i{
     border-color: #fff;
 }
-.export i{
+.export button i{
     height: 31px;
     vertical-align: middle;
     border-left: solid 2px #C198FB;
@@ -167,20 +167,20 @@ img{
 }
 
 .editor-editor{
-    width: 680px;
+    width: 660px;
     margin: auto;
     margin-top: 75px;
 }
 .editor-borda{
     margin: auto;
-    width: 680px;
+    width: 660px;
     height: 400px;
     background-color: #6BD1FF;
     padding: 40px;
     border-radius: 8px;
 }
 .back-bolinhas{
-    width: 600px;
+    width: 580px;
     height: 40px;
     background-color: #141414;
     position: relative;
@@ -208,7 +208,7 @@ img{
 }
 
 #editor-code{
-    width: 600px;
+    width: 580px;
     height: 280px;
     background-color: #141414;
     border-radius: 0px 0px 8px 8px;
@@ -219,7 +219,7 @@ img{
     white-space: pre-wrap;
 }
 .editor-editor input[type="button"]{
-    width: 720px;
+    width: 700px;
     background: rgba(80, 129, 251, 0.08);
     border-radius: 8px;
     height: 50px;
@@ -231,6 +231,42 @@ img{
     background: rgba(80, 129, 251, 0.19);
 }
 
+.modal-export{
+    position: absolute;
+    top: 65px;
+    right: 70px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(80, 129, 251);
+    z-index: 10;
+    padding-top: 3px;
+}
+.modal-export span{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(8, 21, 37);
+    color: rgb(80, 129, 251);
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.modal-export span i{
+    color: rgb(80, 129, 251);
+    font-size: 1.3rem;
+
+}
+.modal-export span:hover, .modal-export span:hover i{
+    color:#fff;
+}
+
+.modal-export-aberto{
+    display: flex;
+}
 /* ----------------------------------------------------- */
 
 .editor-sidebar{
@@ -343,6 +379,28 @@ img{
     .cabecalho-alura .avatar-alura{
         display: none;
     }
+    .cabecalho-alura .avatar-mobile{
+        position: fixed;
+        display: flex;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        padding-top: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(8, 21, 37, 0.9);
+    }
+    .cabecalho-alura .avatar-mobile #name-user{
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+    .cabecalho-alura .avatar-mobile #logo-user{
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+    }
     .logo-alura{
         width: 15%;
     }
@@ -370,6 +428,13 @@ img{
     }
     .editor-menu{
         display: none;
+    }
+    .editor-mobile{
+        position: fixed;
+        display: block;
+        top: 60px;
+        right: 152px;
+        z-index: 11;
     }
 
     /* -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
