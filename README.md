@@ -1,6 +1,3 @@
-#aluradev
-#alurachallengefront2
-
 # ✅ Alura Dev - Editor de código ✅
 
 Alura Dev é um editor de código que te permite compartilhar códigos de forma mais atraente, possibilitando salvar o projeto tanto na aba comunidade como em um arquivo em png, jpeg, svg,
