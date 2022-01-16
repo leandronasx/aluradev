@@ -147,7 +147,7 @@ img{
     text-align: center;
 }
 .export button:hover{
-    background-color: #041C1B;
+    background-color: rgb(80, 129, 251);;
     color: #fff;
     border-color: #fff;
 }
@@ -241,7 +241,7 @@ img{
     flex-direction: column;
     width: 130px;
     height: 200px;
-    background-color: rgb(80, 129, 251);
+    background-color: rgb(255, 255, 255);
     z-index: 10;
     padding-top: 3px;
 }
@@ -250,18 +250,18 @@ img{
     height: 30px;
     text-align: center;
     background-color: rgb(8, 21, 37);
-    color: rgb(80, 129, 251);
+    color: rgb(255, 255, 255);
     margin-bottom: 3px;
     font-size: 1.2rem;
     cursor: pointer;
 }
 .modal-export span i{
-    color: rgb(80, 129, 251);
+    color: rgb(255, 255, 255);
     font-size: 1.3rem;
 
 }
 .modal-export span:hover, .modal-export span:hover i{
-    color:#fff;
+    color:#C198FB;
 }
 
 .modal-export-aberto{
